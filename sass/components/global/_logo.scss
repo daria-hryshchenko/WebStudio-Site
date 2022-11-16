@@ -1,0 +1,12 @@
+.logo {
+ @include fonts (26px, 1.2, 700);
+
+  font-family: var(--logo-font);
+  color: var(--logo-color);
+  text-decoration: none;
+ 
+ 
+}
+
+
+

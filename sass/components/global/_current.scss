@@ -1,0 +1,14 @@
+.current {
+    color: var(--accent-color);
+
+    &::after {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        content: "";
+        border-radius: 2px;
+        height: 4px;
+        width: 100%;
+        background-color: currentColor;
+    }
+}
