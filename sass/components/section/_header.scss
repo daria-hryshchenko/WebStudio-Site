@@ -1,6 +1,12 @@
 .header {
     background-color: var(--header-background-color);
 
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
     &__nav {
         display: flex;
         align-items: center;
@@ -54,6 +60,7 @@
 }
 
 .contact {
+    display: flex;
     &__item {
         &:not(:last-child) {
             margin-right: 30px;
