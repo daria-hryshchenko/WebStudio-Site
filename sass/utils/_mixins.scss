@@ -4,3 +4,15 @@
   font-weight: $fw;
   letter-spacing: $ls;
 }
+
+// Card set mixins with gap
+
+@mixin grid($indent: 30px) {
+  display: flex;
+  flex-wrap: wrap;
+  gap: $indent;
+}
+
+@mixin grid-item($items: 1, $indent: 30px) {
+  flex-basis: calc((100% - $indent * ($items - 1)) / $items);
+}
