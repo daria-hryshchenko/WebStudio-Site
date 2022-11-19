@@ -4,12 +4,16 @@
     &__container {
         display: flex;
         align-items: center;
-        justify-content: space-between;
     }
 
     &__nav {
         display: flex;
         align-items: center;
+
+        @media screen and (max-width: 767px) {
+            width: 100%;
+            justify-content: space-between;
+        }
     }
 
     &__contact {
@@ -22,7 +26,10 @@
     &__logo {
         padding-top: 24px;
         padding-bottom: 25px;
-        margin-right: 93px;
+
+        @media screen and (min-width: 768px) {
+            margin-right: 93px;
+        }
 
         & > span {
             color: var(--accent-color);
@@ -31,6 +38,10 @@
 
     &__list {
         display: flex;
+
+        @media screen and (max-width: 767px) {
+            display: none;
+        }
     }
 
     &__item:not(:last-child) {
@@ -61,6 +72,10 @@
 
 .contact {
     display: flex;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+
     &__item {
         &:not(:last-child) {
             margin-right: 30px;

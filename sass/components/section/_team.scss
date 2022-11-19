@@ -41,6 +41,10 @@
         }
     }
 
+    &__img {
+        object-fit: cover;
+    }
+
     &__description {
         text-align: center;
         padding: 30px 122px 24px;

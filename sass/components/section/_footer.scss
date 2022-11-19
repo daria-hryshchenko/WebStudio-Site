@@ -3,16 +3,38 @@
     background-color: var(--footer-background-color);
 
     &__container {
-        display: flex;
-        align-items: baseline;
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        @media screen and (min-width: 1200px) {
+            align-items: baseline;
+            justify-content: flex-start;
+        }
     }
 
     &__wrap {
-        margin-right: 70px;
+        text-align: center;
+
+        @media screen and (min-width: 768px) {
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 70px;
+            text-align: start;
+        }
+
         > a {
             margin: 0;
             padding: 0;
             color: var(--white-color);
+            font-size: 24px;
+
+            @media screen and (min-width: 1200px) {
+                font-size: 26px;
+            }
 
             > span {
                 color: var(--accent-color);
@@ -22,35 +44,51 @@
 
     &__address {
         margin-top: 20px;
-    }
+        margin-bottom: 60px;
 
-    &__social {
-        margin-right: 93px;
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 0;
+        }
     }
 
     &__headline {
-        font-weight: 700;
+        @include fonts(14px, 1.14, 700);
         margin-bottom: 20px;
-        font-size: 14px;
-        line-height: 16px;
-        letter-spacing: 0.03em;
         text-transform: uppercase;
         color: var(--white-color);
+        text-align: center;
+
+        @media screen and (min-width: 1200px) {
+            text-align: start;
+        }
+    }
+
+    &__social {
+        margin-bottom: 60px;
+
+        @media screen and (min-width: 768px) {
+        }
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 93px;
+            margin-bottom: 0;
+        }
     }
 }
 
 .address {
     &__item:not(:last-child) {
-        margin-bottom: 9px;
+        margin-bottom: 8px;
+
+        @media screen and (min-width: 1200px) {
+            margin-bottom: 9px;
+        }
     }
     &__map {
-        line-height: 1.7;
+        @include fonts(14px, 1.7);
         color: var(--white-color);
         text-decoration: none;
         font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.03em;
-        font-size: 14px;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -61,14 +99,11 @@
     }
 
     &__info {
+        @include fonts(14px, 1.7);
         margin: 0;
         text-decoration: none;
-        line-height: 1.7;
         color: rgba(255, 255, 255, 0.6);
         font-style: normal;
-        font-weight: 400;
-        letter-spacing: 0.03em;
-        font-size: 14px;
 
         transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -96,7 +131,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-top: 20px;
+        flex-wrap: wrap;
     }
 
     &__input {
@@ -105,16 +140,23 @@
         justify-content: center;
 
         height: 50px;
-        width: 358px;
-        margin-right: 12px;
+        width: 100%;
+        max-width: 450px;
         padding-left: 16px;
         padding-right: 16px;
+        margin-bottom: 20px;
 
         background-color: transparent;
         border: 1px solid rgba(255, 255, 255, 0.3);
         filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
         color: rgba(255, 255, 255, 0.6);
         border-radius: 4px;
+
+        @media screen and (min-width: 1200px) {
+            margin-right: 12px;
+            margin-bottom: 0;
+            width: 358px;
+        }
 
         &::placeholder {
             font-size: 16px;
@@ -125,16 +167,14 @@
     }
 
     &__button {
+        @include fonts(16px, 1.87, 700, 0.06em);
+
         display: flex;
         justify-content: center;
         align-items: center;
         padding: 10px 28px;
 
         text-decoration: none;
-        font-weight: 700;
-        font-size: 16px;
-        line-height: 1.87;
-        letter-spacing: 0.06em;
         color: var(--white-color);
 
         border: none;
@@ -145,7 +185,11 @@
     }
 
     &__icon {
-        margin-left: 10px;
+        margin-left: 12px;
         padding: 0 auto;
+
+        @media screen and (min-width: 1200px) {
+            margin-left: 10px;
+        }
     }
 }

@@ -23,18 +23,13 @@
     <title>Головна</title>
   </head>
   <body>
-    <!--
     <header class="header">
       <div class="container header__container">
         <nav class="nav header__nav">
           <a href="index.html" class="logo nav__logo"><span>Web</span>Studio</a>
 
-          <button
-            class="menu-toggle js-open-menu"
-            aria-expanded="false"
-            aria-controls="mobile-menu"
-          >
-            <svg width="40" weight="40">
+          <button type="button" class="menu-open">
+            <svg width="40" height="40">
               <use href="./images/svg/icons.svg#icon-nav-menu"></use>
             </svg>
           </button>
@@ -69,8 +64,29 @@
           </li>
         </ul>
       </div>
+
+      <!--MOBILE MENU-->
+      <div class="mob-menu">
+        <button type="button" class="menu-close">
+          <svg width="40" height="40">
+            <use href="./images/svg/icons.svg#icon-mobile-close"></use>
+          </svg>
+        </button>
+
+        <ul class="nav__list">
+          <li class="li nav__item">
+            <a href="index.html" class="nav__link current">Студія</a>
+          </li>
+          <li class="li nav__item">
+            <a href="portfolio.html" class="nav__link">Портфоліо</a>
+          </li>
+          <li class="li nav__item">
+            <a href="/contact" class="nav__link">Контакти</a>
+          </li>
+        </ul>
+      </div>
     </header>
--->
+
     <!--HERO SECTION-->
 
     <main>
@@ -148,34 +164,73 @@
           <ul class="activities__list">
             <li class="li activities__item">
               <div class="activities__img">
-                <img
-                  src="./images/box1.jpg"
-                  alt="людина друкує на клавіатурі і дивиться в планшет"
-                  width="370"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/activities/webp/act-1mg-1x.webp 1x,
+                      ./images/activities/webp/act-1mg-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/activities/jpg/act-1mg-1x.jpg 1x,
+                      ./images/activities/jpg/act-1mg-2x.jpg 2x
+                    "
+                    src="./images/activities/jpg/act-1mg-1x.jpg 1x"
+                    alt="людина друкує на клавіатурі і дивиться в планшет"
+                    class="img"
+                  />
+                </picture>
                 <h3 class="activities__description">Десктопні додатки</h3>
               </div>
             </li>
             <li class="li activities__item">
               <div class="activities__img">
-                <img
-                  src="./images/box2.jpg"
-                  alt="людина дивиться на макети для додатка на моніторі"
-                  width="370"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/activities/webp/act-2mg-1x.webp 1x,
+                      ./images/activities/webp/act-2mg-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/activities/jpg/act-2mg-1x.jpg 1x,
+                      ./images/activities/jpg/act-2mg-2x.jpg 2x
+                    "
+                    src="./images/activities/jpg/act-2mg-1x.jpg 1x"
+                    alt="людина дивиться на макети для додатка на моніторі"
+                    width="370"
+                    class="img"
+                  />
+                </picture>
+
                 <h3 class="activities__description">Мобільні додатки</h3>
               </div>
             </li>
             <li class="li activities__item">
               <div class="activities__img">
-                <img
-                  src="./images/box3.jpg"
-                  alt="чоловік дивиться на цвітову діаграмму на моніторі"
-                  width="370"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/activities/webp/act-3mg-1x.webp 1x,
+                      ./images/activities/webp/act-3mg-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/activities/jpg/act-3mg-1x.jpg 1x,
+                      ./images/activities/jpg/act-3mg-2x.jpg 2x
+                    "
+                    src="./images/activities/jpg/act-3mg-1x.jpg 1x"
+                    alt="чоловік дивиться на цвітову діаграмму на моніторі"
+                    width="370"
+                    class="img"
+                  />
+                </picture>
                 <h3 class="activities__description">Дизайнерські рішення</h3>
               </div>
             </li>
@@ -193,21 +248,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/450/product-450.webp 450w,
-                    ./images/team/354/product-354.webp 354w,
-                    ./images/team/270/product-270.webp 270w
+                    ./images/team/450/webp/product-450-1x.webp 450w,
+                    ./images/team/450/webp/product-450-2x.webp 900w,
+                    ./images/team/354/webp/product-354-1x.webp 354w,
+                    ./images/team/354/webp/product-354-2x.webp 708w,
+                    ./images/team/270/webp/product-270-1x.webp 270w,
+                    ./images/team/270/webp/product-270-1x.webp 520w
                   "
                   type="image/webp"
                 />
                 <img
                   srcset="
-                    ./images/team/450/product-450.jpg 450w,
-                    ./images/team/354/product-354.jpg 354w,
-                    ./images/team/270/product-270.jpg 270w
+                    ./images/team/450/jpg/product-450-1x.jpg 450w,
+                    ./images/team/450/jpg/product-450-2x.jpg 900w,
+                    ./images/team/354/jpg/product-354-1x.jpg 354w,
+                    ./images/team/354/jpg/product-354-2x.jpg 708w,
+                    ./images/team/270/jpg/product-270-1x.jpg 270w,
+                    ./images/team/270/jpg/product-270-2x.jpg 520w
                   "
-                  src="./images/team/450/product-450.jpg"
+                  src="./images/team/450/jpg/product-450-1x.jpg"
                   alt="чоловік, що посміхається, з бородою і в окулярах"
-                  class="img"
+                  class="img team__img"
                 />
               </picture>
 
@@ -252,21 +313,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/450/frontend-450.webp 450w,
-                    ./images/team/354/frontend-354.webp 354w,
-                    ./images/team/270/frontend-270.webp 270w
+                    ./images/team/450/webp/frontend-450-1x.webp 450w,
+                    ./images/team/450/webp/frontend-450-2x.webp 900w,
+                    ./images/team/354/webp/frontend-354-1x.webp 354w,
+                    ./images/team/354/webp/frontend-354-2x.webp 708w,
+                    ./images/team/270/webp/frontend-270-1x.webp 270w,
+                    ./images/team/270/webp/frontend-270-2x.webp 520w
                   "
                   type="image/webp"
                 />
                 <img
                   srcset="
-                    ./images/team/450/frontend-450.jpg 450w,
-                    ./images/team/354/frontend-354.jpg 354w,
-                    ./images/team/270/frontend-270.jpg 270w
+                    ./images/team/450/jpg/frontend-450-1x.jpg 450w,
+                    ./images/team/450/jpg/frontend-450-2x.jpg 900w,
+                    ./images/team/354/jpg/frontend-354-1x.jpg 354w,
+                    ./images/team/354/jpg/frontend-354-2x.jpg 708w,
+                    ./images/team/270/jpg/frontend-270-1x.jpg 270w,
+                    ./images/team/270/jpg/frontend-270-2x.jpg 520w
                   "
-                  src="./images/team/450/frontend-450.jpg"
+                  src="./images/team/270/jpg/frontend-270-1x.jpg"
                   alt="жінка в чорному жакеті, що посміхається"
-                  class="img"
+                  class="img team__img"
                 />
               </picture>
               <div class="team__description">
@@ -310,21 +377,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/450/marketing-450.webp 450w,
-                    ./images/team/354/marketing-354.webp 354w,
-                    ./images/team/270/marketing-270.webp 270w
+                    ./images/team/450/webp/marketing-450-1x.webp 450w,
+                    ./images/team/450/webp/marketing-450-2x.webp 900w,
+                    ./images/team/354/webp/marketing-354-1x.webp 354w,
+                    ./images/team/354/webp/marketing-354-2x.webp 708w,
+                    ./images/team/270/webp/marketing-270-1x.webp 270w,
+                    ./images/team/270/webp/marketing-270-2x.webp 520w
                   "
                   type="image/webp"
                 />
                 <img
                   srcset="
-                    ./images/team/450/marketing-450.jpg 450w,
-                    ./images/team/354/marketing-354.jpg 354w,
-                    ./images/team/270/marketing-270.jpg 270w
+                    ./images/team/450/jpg/marketing-450-1x.jpg 450w,
+                    ./images/team/450/jpg/marketing-450-2x.jpg 900w,
+                    ./images/team/354/jpg/marketing-354-1x.jpg 354w,
+                    ./images/team/354/jpg/marketing-354-2x.jpg 708w,
+                    ./images/team/270/jpg/marketing-270-1x.jpg 270w,
+                    ./images/team/270/jpg/marketing-270-2x.jpg 520w
                   "
-                  src="./images/team/450/marketing-450.jpg"
+                  src="./images/team/270/jpg/marketing-270-1x.jpg"
                   alt="чоловік дивиться в сторону і посміхається"
-                  class="img"
+                  class="img team__img"
                 />
               </picture>
               <div class="team__description">
@@ -368,21 +441,27 @@
               <picture>
                 <source
                   srcset="
-                    ./images/team/450/ui-450.webp 450w,
-                    ./images/team/354/ui-354.webp 354w,
-                    ./images/team/270/ui-270.webp 270w
+                    ./images/team/450/webp/ui-450-1x.webp 450w,
+                    ./images/team/450/webp/ui-450-2x.webp 900w,
+                    ./images/team/354/webp/ui-354-1x.webp 354w,
+                    ./images/team/354/webp/ui-354-2x.webp 708w,
+                    ./images/team/270/webp/ui-270-1x.webp 270w,
+                    ./images/team/270/webp/ui-270-2x.webp 520w
                   "
                   type="image/webp"
                 />
                 <img
                   srcset="
-                    ./images/team/450/ui-450.jpg 450w,
-                    ./images/team/354/ui-354.jpg 354w,
-                    ./images/team/270/ui-270.jpg 270w
+                    ./images/team/450/jpg/ui-450-1x.jpg 450w,
+                    ./images/team/450/jpg/ui-450-2x.jpg 900w,
+                    ./images/team/354/jpg/ui-354-1x.jpg 354w,
+                    ./images/team/354/jpg/ui-354-2x.jpg 708w,
+                    ./images/team/270/jpg/ui-270-1x.jpg 270w,
+                    ./images/team/270/jpg/ui-270-2x.jpg 520w
                   "
-                  src="./images/team/450/ui-450.jpg"
+                  src="./images/team/270/jpg/ui-270-1x.jpg"
                   alt="чоловік в чорній сорочці з бородою"
-                  class="img"
+                  class="img team__img"
                 />
               </picture>
               <div class="team__description">
@@ -424,7 +503,7 @@
           </ul>
         </div>
       </section>
-      -->
+
       <!--CLIENTS-->
 
       <section class="clients">
@@ -465,7 +544,9 @@
         </div>
       </section>
     </main>
-    <!--
+
+    <!--FOOTER SECTION-->
+
     <footer class="footer">
       <div class="container footer__container">
         <div class="footer__wrap">
@@ -552,8 +633,9 @@
         </div>
       </div>
     </footer>
--->
-    <!--MODAL WINDOW
+
+    <!--MODAL WINDOW -->
+
     <div class="modal modal__backdrop is-hidden" data-modal>
       <div class="modal__container">
         <button type="button" class="modal__close">
@@ -638,33 +720,6 @@
           <button class="form__submit" type="submit">Відправити</button>
         </form>
       </div>
-    </div>
--->
-
-    <!--MOBILE MENU-->
-
-    <div class="menu-container js-menu-container" id="mobile-menu">
-      <button class="menu-toggle js-close-menu">
-        <svg
-          fill="currentColor"
-          viewBox="0 0 20 20"
-          xmlns="http://www.w3.org/2000/svg"
-          width="24"
-          height="24"
-        >
-          <path
-            fill-rule="evenodd"
-            d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z"
-            clip-rule="evenodd"
-          ></path>
-        </svg>
-      </button>
-
-      <ul class="mobile-menu">
-        <li><a href="index.html" class="link">Студія</a></li>
-        <li><a href="portfolio.html" class="link">Портфоліо</a></li>
-        <li><a href="/contact" class="link">Контакти</a></li>
-      </ul>
     </div>
 
     <script

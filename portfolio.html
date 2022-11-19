@@ -24,10 +24,12 @@
   </head>
 
   <body>
+    <!--
     <header class="header">
       <div class="container header__container">
         <nav class="nav header__nav">
           <a href="index.html" class="logo nav__logo"><span>Web</span>Studio</a>
+
           <ul class="nav__list">
             <li class="li nav__item">
               <a href="index.html" class="nav__link">Студія</a>
@@ -39,26 +41,26 @@
               <a href="/contact" class="nav__link">Контакти</a>
             </li>
           </ul>
-          <ul class="header__contact contact">
-            <li class="li contact__item">
-              <a href="mailto:info@devstudio.com" class="contact__link"
-                ><svg class="contact__icon" width="16" height="12">
-                  <use href="./images/svg/icons.svg#icon-envelope"></use></svg
-                >info@devstudio.com</a
-              >
-            </li>
-            <li class="li contact__item">
-              <a href="tel:+380961111111" class="contact__link"
-                ><svg class="contact__icon" width="10" height="16">
-                  <use href="./images/svg/icons.svg#icon-smartphone"></use></svg
-                >+38 096 111 11 11</a
-              >
-            </li>
-          </ul>
         </nav>
+        <ul class="header__contact contact">
+          <li class="li contact__item">
+            <a href="mailto:info@devstudio.com" class="contact__link"
+              ><svg class="contact__icon" width="16" height="12">
+                <use href="./images/svg/icons.svg#icon-envelope"></use></svg
+              >info@devstudio.com</a
+            >
+          </li>
+          <li class="li contact__item">
+            <a href="tel:+380961111111" class="contact__link"
+              ><svg class="contact__icon" width="10" height="16">
+                <use href="./images/svg/icons.svg#icon-smartphone"></use></svg
+              >+38 096 111 11 11</a
+            >
+          </li>
+        </ul>
       </div>
     </header>
-
+-->
     <main class="portfolio">
       <section class="portfolio__container">
         <div class="container">
@@ -83,13 +85,35 @@
           <ul class="portfolio_projects projects">
             <li class="li projects__item">
               <div class="projects__wraper">
-                <img
-                  src="./images/portfolio1.jpg"
-                  width="370"
-                  height="294"
-                  alt="відкритий ноутбук на моніторі якого відкритий сайт"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/450/webp/techno-450-1x.webp 450w,
+                      ./images/portfolio/450/webp/techno-450-2x.webp 900w,
+                      ./images/portfolio/370/webp/techno-370-1x.webp 370w,
+                      ./images/portfolio/370/webp/techno-370-2x.webp 740w,
+                      ./images/portfolio/354/webp/techno-354-1x.webp 354w,
+                      ./images/portfolio/354/webp/techno-354-2x.webp 708w
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/portfolio/450/jpg/techno-450-1x.jpg 450w,
+                      ./images/portfolio/450/jpg/techno-450-2x.jpg 900w,
+                      ./images/portfolio/370/jpg/techno-370-1x.jpg 370w,
+                      ./images/portfolio/370/jpg/techno-370-2x.jpg 740w,
+                      ./images/portfolio/354/jpg/techno-354-1x.jpg 354w,
+                      ./images/portfolio/354/jpg/techno-354-2x.jpg 708w
+                    "
+                    src="./images/portfolio/450/jpg/techno-450-1x.jpg"
+                    alt="відкритий ноутбук на моніторі якого відкритий сайт"
+                    class="img projects__img"
+                    width="450"
+                  />
+                </picture>
+
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -103,15 +127,37 @@
                 <p class="projects__department">Веб-сайт</p>
               </div>
             </li>
+
             <li class="li projects__item">
               <div class="projects__wraper">
-                <img
-                  src="./images/portfolio2.jpg"
-                  width="370"
-                  height="294"
-                  alt="два баскетболіста з м'ячем"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/450/webp/poster-450-1x.webp 450w,
+                      ./images/portfolio/450/webp/poster-450-2x.webp 900w,
+                      ./images/portfolio/370/webp/poster-370-1x.webp 370w,
+                      ./images/portfolio/370/webp/poster-370-2x.webp 740w,
+                      ./images/portfolio/354/webp/poster-354-1x.webp 354w,
+                      ./images/portfolio/354/webp/poster-354-2x.webp 708w
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/portfolio/450/jpg/poster-450-1x.jpg 450w,
+                      ./images/portfolio/450/jpg/poster-450-2x.jpg 900w,
+                      ./images/portfolio/370/jpg/poster-370-1x.jpg 370w,
+                      ./images/portfolio/370/jpg/poster-370-2x.jpg 740w,
+                      ./images/portfolio/354/jpg/poster-354-1x.jpg 354w,
+                      ./images/portfolio/354/jpg/poster-354-2x.jpg 708w
+                    "
+                    src="./images/portfolio/450/jpg/poster-450-1x.jpg"
+                    alt="два баскетболіста з м'ячем"
+                    class="img projects__img"
+                    width="450"
+                  />
+                </picture>
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -127,13 +173,34 @@
             </li>
             <li class="li projects__item">
               <div class="projects__wraper">
-                <img
-                  src="./images/portfolio3.jpg"
-                  width="370"
-                  height="294"
-                  alt="логотип з зображенням риби"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/450/webp/restoran-450-1x.webp 450w,
+                      ./images/portfolio/450/webp/restoran-450-2x.webp 900w,
+                      ./images/portfolio/370/webp/restoran-370-1x.webp 370w,
+                      ./images/portfolio/370/webp/restoran-370-2x.webp 740w,
+                      ./images/portfolio/354/webp/restoran-354-1x.webp 354w,
+                      ./images/portfolio/354/webp/restoran-354-2x.webp 708w
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/portfolio/450/jpg/restoran-450-1x.jpg 450w,
+                      ./images/portfolio/450/jpg/restoran-450-2x.jpg 900w,
+                      ./images/portfolio/370/jpg/restoran-370-1x.jpg 370w,
+                      ./images/portfolio/370/jpg/restoran-370-2x.jpg 740w,
+                      ./images/portfolio/354/jpg/restoran-354-1x.jpg 354w,
+                      ./images/portfolio/354/jpg/restoran-354-2x.jpg 708w
+                    "
+                    src="./images/portfolio/450/jpg/restoran-450-1x.jpg"
+                    alt="логотип з зображенням риби"
+                    class="img projects__img"
+                    width="450"
+                  />
+                </picture>
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -149,13 +216,34 @@
             </li>
             <li class="li projects__item">
               <div class="projects__wraper">
-                <img
-                  src="./images/portfolio4.jpg"
-                  width="370"
-                  height="294"
-                  alt="чорні безпровідні навушники"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/450/webp/prime-450-1x.webp 450w,
+                      ./images/portfolio/450/webp/prime-450-2x.webp 900w,
+                      ./images/portfolio/370/webp/prime-370-1x.webp 370w,
+                      ./images/portfolio/370/webp/prime-370-2x.webp 740w,
+                      ./images/portfolio/354/webp/prime-354-1x.webp 354w,
+                      ./images/portfolio/354/webp/prime-354-2x.webp 708w
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/portfolio/450/jpg/prime-450-1x.jpg 450w,
+                      ./images/portfolio/450/jpg/prime-450-2x.jpg 900w,
+                      ./images/portfolio/370/jpg/prime-370-1x.jpg 370w,
+                      ./images/portfolio/370/jpg/prime-370-2x.jpg 740w,
+                      ./images/portfolio/354/jpg/prime-354-1x.jpg 354w,
+                      ./images/portfolio/354/jpg/prime-354-2x.jpg 708w
+                    "
+                    src="./images/portfolio/450/jpg/prime-450-1x.jpg"
+                    alt="чорні безпровідні навушники"
+                    class="img projects__img"
+                    width="450"
+                  />
+                </picture>
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -171,13 +259,34 @@
             </li>
             <li class="li projects__item">
               <div class="projects__wraper">
-                <img
-                  src="./images/portfolio5.jpg"
-                  width="370"
-                  height="294"
-                  alt="біла та коричнева коробка з логотипом"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/450/webp/boxes-450-1x.webp 450w,
+                      ./images/portfolio/450/webp/boxes-450-2x.webp 900w,
+                      ./images/portfolio/370/webp/boxes-370-1x.webp 370w,
+                      ./images/portfolio/370/webp/boxes-370-2x.webp 740w,
+                      ./images/portfolio/354/webp/boxes-354-1x.webp 354w,
+                      ./images/portfolio/354/webp/boxes-354-2x.webp 708w
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/portfolio/450/jpg/boxes-450-1x.jpg 450w,
+                      ./images/portfolio/450/jpg/boxes-450-2x.jpg 900w,
+                      ./images/portfolio/370/jpg/boxes-370-1x.jpg 370w,
+                      ./images/portfolio/370/jpg/boxes-370-2x.jpg 740w,
+                      ./images/portfolio/354/jpg/boxes-354-1x.jpg 354w,
+                      ./images/portfolio/354/jpg/boxes-354-2x.jpg 708w
+                    "
+                    src="./images/portfolio/450/jpg/boxes-450-1x.jpg"
+                    alt="біла та коричнева коробка з логотипом"
+                    class="img projects__img"
+                    width="450"
+                  />
+                </picture>
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -193,13 +302,34 @@
             </li>
             <li class="li projects__item">
               <div class="projects__wraper">
-                <img
-                  src="./images/portfolio6.jpg"
-                  width="370"
-                  height="294"
-                  alt="карта світу на екрані монитору"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/450/webp/inspiration-450-1x.webp 450w,
+                      ./images/portfolio/450/webp/inspiration-450-2x.webp 900w,
+                      ./images/portfolio/370/webp/inspiration-370-1x.webp 370w,
+                      ./images/portfolio/370/webp/inspiration-370-2x.webp 740w,
+                      ./images/portfolio/354/webp/inspiration-354-1x.webp 354w,
+                      ./images/portfolio/354/webp/inspiration-354-2x.webp 708w
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/portfolio/450/jpg/inspiration-450-1x.jpg 450w,
+                      ./images/portfolio/450/jpg/inspiration-450-2x.jpg 900w,
+                      ./images/portfolio/370/jpg/inspiration-370-1x.jpg 370w,
+                      ./images/portfolio/370/jpg/inspiration-370-2x.jpg 740w,
+                      ./images/portfolio/354/jpg/inspiration-354-1x.jpg 354w,
+                      ./images/portfolio/354/jpg/inspiration-354-2x.jpg 708w
+                    "
+                    src="./images/portfolio/450/jpg/inspiration-450-1x.jpg"
+                    alt="карта світу на екрані монитору"
+                    class="img projects__img"
+                    width="450"
+                  />
+                </picture>
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -215,13 +345,34 @@
             </li>
             <li class="li projects__item">
               <div class="projects__wraper">
-                <img
-                  src="./images/portfolio7.jpg"
-                  width="370"
-                  height="294"
-                  alt="розворот журналу"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/450/webp/edition-450-1x.webp 450w,
+                      ./images/portfolio/450/webp/edition-450-2x.webp 900w,
+                      ./images/portfolio/370/webp/edition-370-1x.webp 370w,
+                      ./images/portfolio/370/webp/edition-370-2x.webp 740w,
+                      ./images/portfolio/354/webp/edition-354-1x.webp 354w,
+                      ./images/portfolio/354/webp/edition-354-2x.webp 708w
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/portfolio/450/jpg/edition-450-1x.jpg 450w,
+                      ./images/portfolio/450/jpg/edition-450-2x.jpg 900w,
+                      ./images/portfolio/370/jpg/edition-370-1x.jpg 370w,
+                      ./images/portfolio/370/jpg/edition-370-2x.jpg 740w,
+                      ./images/portfolio/354/jpg/edition-354-1x.jpg 354w,
+                      ./images/portfolio/354/jpg/edition-354-2x.jpg 708w
+                    "
+                    src="./images/portfolio/450/jpg/edition-450-1x.jpg"
+                    alt="розворот журналу"
+                    class="img projects__img"
+                    width="450"
+                  />
+                </picture>
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -237,13 +388,34 @@
             </li>
             <li class="li projects__item">
               <div class="projects__wraper">
-                <img
-                  src="./images/portfolio8.jpg"
-                  width="370"
-                  height="294"
-                  alt="значок логотипа"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/450/webp/lab-450-1x.webp 450w,
+                      ./images/portfolio/450/webp/lab-450-2x.webp 900w,
+                      ./images/portfolio/370/webp/lab-370-1x.webp 370w,
+                      ./images/portfolio/370/webp/lab-370-2x.webp 740w,
+                      ./images/portfolio/354/webp/lab-354-1x.webp 354w,
+                      ./images/portfolio/354/webp/lab-354-2x.webp 708w
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/portfolio/450/jpg/lab-450-1x.jpg 450w,
+                      ./images/portfolio/450/jpg/lab-450-2x.jpg 900w,
+                      ./images/portfolio/370/jpg/lab-370-1x.jpg 370w,
+                      ./images/portfolio/370/jpg/lab-370-2x.jpg 740w,
+                      ./images/portfolio/354/jpg/lab-354-1x.jpg 354w,
+                      ./images/portfolio/354/jpg/lab-354-2x.jpg 708w
+                    "
+                    src="./images/portfolio/450/jpg/lab-450-1x.jpg"
+                    alt="значок логотипа"
+                    class="img projects__img"
+                    width="450"
+                  />
+                </picture>
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -259,13 +431,34 @@
             </li>
             <li class="li projects__item">
               <div class="projects__wraper">
-                <img
-                  src="./images/portfolio9.jpg"
-                  width="370"
-                  height="294"
-                  alt="человек печатает на ноутбуке"
-                  class="img"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/portfolio/450/webp/growing-450-1x.webp 450w,
+                      ./images/portfolio/450/webp/growing-450-2x.webp 900w,
+                      ./images/portfolio/370/webp/growing-370-1x.webp 370w,
+                      ./images/portfolio/370/webp/growing-370-2x.webp 740w,
+                      ./images/portfolio/354/webp/growing-354-1x.webp 354w,
+                      ./images/portfolio/354/webp/growing-354-2x.webp 708w
+                    "
+                    type="image/webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/portfolio/450/jpg/growing-450-1x.jpg 450w,
+                      ./images/portfolio/450/jpg/growing-450-2x.jpg 900w,
+                      ./images/portfolio/370/jpg/growing-370-1x.jpg 370w,
+                      ./images/portfolio/370/jpg/growing-370-2x.jpg 740w,
+                      ./images/portfolio/354/jpg/growing-354-1x.jpg 354w,
+                      ./images/portfolio/354/jpg/growing-354-2x.jpg 708w
+                    "
+                    src="./images/portfolio/450/jpg/growing-450-1x.jpg"
+                    alt="человек печатает на ноутбуке"
+                    class="img projects__img"
+                    width="450"
+                  />
+                </picture>
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
