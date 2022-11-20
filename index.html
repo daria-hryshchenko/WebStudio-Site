@@ -28,7 +28,7 @@
         <nav class="nav header__nav">
           <a href="index.html" class="logo nav__logo"><span>Web</span>Studio</a>
 
-          <button type="button" class="menu-open">
+          <button type="button" class="mob__button menu-open" data-menu-open>
             <svg width="40" height="40">
               <use href="./images/svg/icons.svg#icon-nav-menu"></use>
             </svg>
@@ -66,24 +66,50 @@
       </div>
 
       <!--MOBILE MENU-->
-      <div class="mob-menu">
-        <button type="button" class="menu-close">
+      <div class="mob is-hidden" data-menu>
+        <button type="button" class="mob__close" data-menu-close>
           <svg width="40" height="40">
-            <use href="./images/svg/icons.svg#icon-mobile-close"></use>
+            <use href="./images/svg/icons.svg#mob-menu-close"></use>
           </svg>
         </button>
 
-        <ul class="nav__list">
-          <li class="li nav__item">
-            <a href="index.html" class="nav__link current">Студія</a>
-          </li>
-          <li class="li nav__item">
-            <a href="portfolio.html" class="nav__link">Портфоліо</a>
-          </li>
-          <li class="li nav__item">
-            <a href="/contact" class="nav__link">Контакти</a>
-          </li>
-        </ul>
+        <div class="mob__container">
+          <nav class="mob__nav">
+            <ul class="mob__list">
+              <li class="li mob__item">
+                <a href="index.html" class="mob__link">Студія</a>
+              </li>
+              <li class="li mob__item">
+                <a href="portfolio.html" class="mob__link">Портфоліо</a>
+              </li>
+              <li class="li mob__item">
+                <a href="/contact" class="mob__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+
+          <div class="mob__wrap">
+            <a href="tel:+380961111111" class="mob__tel">+38 096 111 11 11</a>
+            <a href="mailto:info@devstudio.com" class="mob__mail"
+              >info@devstudio.com</a
+            >
+          </div>
+
+          <ul class="mob__social">
+            <li class="li">
+              <a href="" target="_blank" rel="noreferrer noopener">Instagram</a>
+            </li>
+            <li class="li">
+              <a href="" target="_blank" rel="noreferrer noopener">Twitter</a>
+            </li>
+            <li class="li">
+              <a href="" target="_blank" rel="noreferrer noopener">Facebook</a>
+            </li>
+            <li class="li">
+              <a href="" target="_blank" rel="noreferrer noopener">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </header>
 
