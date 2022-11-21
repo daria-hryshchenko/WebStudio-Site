@@ -141,34 +141,64 @@
             <li class="li projects__item">
               <div class="projects__wraper">
                 <picture>
+                  <!-- desktop -->
                   <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/webp/techno-450-1x.webp 450w,
-                      ./images/portfolio/450/webp/techno-450-2x.webp 900w,
-                      ./images/portfolio/370/webp/techno-370-1x.webp 370w,
-                      ./images/portfolio/370/webp/techno-370-2x.webp 740w,
-                      ./images/portfolio/354/webp/techno-354-1x.webp 354w,
-                      ./images/portfolio/354/webp/techno-354-2x.webp 708w
+                      ./images/portfolio/354/webp/techno-354-1x.webp 1x,
+                      ./images/portfolio/354/webp/techno-354-2x.webp 2x
                     "
                     type="image/webp"
                   />
-
-                  <img
+                  <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/jpg/techno-450-1x.jpg 450w,
-                      ./images/portfolio/450/jpg/techno-450-2x.jpg 900w,
-                      ./images/portfolio/370/jpg/techno-370-1x.jpg 370w,
-                      ./images/portfolio/370/jpg/techno-370-2x.jpg 740w,
-                      ./images/portfolio/354/jpg/techno-354-1x.jpg 354w,
-                      ./images/portfolio/354/jpg/techno-354-2x.jpg 708w
+                      ./images/portfolio/354/jpg/techno-354-1x.jpg 1x,
+                      ./images/portfolio/354/jpg/techno-354-2x.jpg 2x
                     "
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/webp/techno-370-1x.webp 1x,
+                      ./images/portfolio/370/webp/techno-370-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/jpg/techno-370-1x.jpg 1x,
+                      ./images/portfolio/370/jpg/techno-370-2x.jpg 2x
+                    "
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/webp/techno-450-1x.webp 1x,
+                      ./images/portfolio/450/webp/techno-450-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/jpg/techno-450-1x.jpg 1x,
+                      ./images/portfolio/450/jpg/techno-450-2x.jpg 2x
+                    "
+                  />
+                  <!-- default -->
+                  <img
                     src="./images/portfolio/450/jpg/techno-450-1x.jpg"
                     alt="відкритий ноутбук на моніторі якого відкритий сайт"
                     class="img projects__img"
                     width="450"
+                    height="294"
+                    loading="lazy"
                   />
                 </picture>
-
                 <div class="projects__hover">
                   <p class="projects__description">
                     Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -186,31 +216,62 @@
             <li class="li projects__item">
               <div class="projects__wraper">
                 <picture>
+                  <!-- desktop -->
                   <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/webp/poster-450-1x.webp 450w,
-                      ./images/portfolio/450/webp/poster-450-2x.webp 900w,
-                      ./images/portfolio/370/webp/poster-370-1x.webp 370w,
-                      ./images/portfolio/370/webp/poster-370-2x.webp 740w,
-                      ./images/portfolio/354/webp/poster-354-1x.webp 354w,
-                      ./images/portfolio/354/webp/poster-354-2x.webp 708w
+                      ./images/portfolio/354/webp/poster-354-1x.webp 1x,
+                      ./images/portfolio/354/webp/poster-354-2x.webp 2x
                     "
                     type="image/webp"
                   />
-
-                  <img
+                  <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/jpg/poster-450-1x.jpg 450w,
-                      ./images/portfolio/450/jpg/poster-450-2x.jpg 900w,
-                      ./images/portfolio/370/jpg/poster-370-1x.jpg 370w,
-                      ./images/portfolio/370/jpg/poster-370-2x.jpg 740w,
-                      ./images/portfolio/354/jpg/poster-354-1x.jpg 354w,
-                      ./images/portfolio/354/jpg/poster-354-2x.jpg 708w
+                      ./images/portfolio/354/jpg/poster-354-1x.jpg 1x,
+                      ./images/portfolio/354/jpg/poster-354-2x.jpg 2x
                     "
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/webp/poster-370-1x.webp 1x,
+                      ./images/portfolio/370/webp/poster-370-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/jpg/poster-370-1x.jpg 1x,
+                      ./images/portfolio/370/jpg/poster-370-2x.jpg 2x
+                    "
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/webp/poster-450-1x.webp 1x,
+                      ./images/portfolio/450/webp/poster-450-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/jpg/poster-450-1x.jpg 1x,
+                      ./images/portfolio/450/jpg/poster-450-2x.jpg 2x
+                    "
+                  />
+                  <!-- default -->
+                  <img
                     src="./images/portfolio/450/jpg/poster-450-1x.jpg"
                     alt="два баскетболіста з м'ячем"
                     class="img projects__img"
                     width="450"
+                    height="294"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="projects__hover">
@@ -229,31 +290,62 @@
             <li class="li projects__item">
               <div class="projects__wraper">
                 <picture>
+                  <!-- desktop -->
                   <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/webp/restoran-450-1x.webp 450w,
-                      ./images/portfolio/450/webp/restoran-450-2x.webp 900w,
-                      ./images/portfolio/370/webp/restoran-370-1x.webp 370w,
-                      ./images/portfolio/370/webp/restoran-370-2x.webp 740w,
-                      ./images/portfolio/354/webp/restoran-354-1x.webp 354w,
-                      ./images/portfolio/354/webp/restoran-354-2x.webp 708w
+                      ./images/portfolio/354/webp/restoran-354-1x.webp 1x,
+                      ./images/portfolio/354/webp/restoran-354-2x.webp 2x
                     "
                     type="image/webp"
                   />
-
-                  <img
+                  <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/jpg/restoran-450-1x.jpg 450w,
-                      ./images/portfolio/450/jpg/restoran-450-2x.jpg 900w,
-                      ./images/portfolio/370/jpg/restoran-370-1x.jpg 370w,
-                      ./images/portfolio/370/jpg/restoran-370-2x.jpg 740w,
-                      ./images/portfolio/354/jpg/restoran-354-1x.jpg 354w,
-                      ./images/portfolio/354/jpg/restoran-354-2x.jpg 708w
+                      ./images/portfolio/354/jpg/restoran-354-1x.jpg 1x,
+                      ./images/portfolio/354/jpg/restoran-354-2x.jpg 2x
                     "
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/webp/restoran-370-1x.webp 1x,
+                      ./images/portfolio/370/webp/restoran-370-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/jpg/restoran-370-1x.jpg 1x,
+                      ./images/portfolio/370/jpg/restoran-370-2x.jpg 2x
+                    "
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/webp/restoran-450-1x.webp 1x,
+                      ./images/portfolio/450/webp/restoran-450-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/jpg/restoran-450-1x.jpg 1x,
+                      ./images/portfolio/450/jpg/restoran-450-2x.jpg 2x
+                    "
+                  />
+                  <!-- default -->
+                  <img
                     src="./images/portfolio/450/jpg/restoran-450-1x.jpg"
                     alt="логотип з зображенням риби"
                     class="img projects__img"
                     width="450"
+                    height="294"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="projects__hover">
@@ -272,31 +364,62 @@
             <li class="li projects__item">
               <div class="projects__wraper">
                 <picture>
+                  <!-- desktop -->
                   <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/webp/prime-450-1x.webp 450w,
-                      ./images/portfolio/450/webp/prime-450-2x.webp 900w,
-                      ./images/portfolio/370/webp/prime-370-1x.webp 370w,
-                      ./images/portfolio/370/webp/prime-370-2x.webp 740w,
-                      ./images/portfolio/354/webp/prime-354-1x.webp 354w,
-                      ./images/portfolio/354/webp/prime-354-2x.webp 708w
+                      ./images/portfolio/354/webp/prime-354-1x.webp 1x,
+                      ./images/portfolio/354/webp/prime-354-2x.webp 2x
                     "
                     type="image/webp"
                   />
-
-                  <img
+                  <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/jpg/prime-450-1x.jpg 450w,
-                      ./images/portfolio/450/jpg/prime-450-2x.jpg 900w,
-                      ./images/portfolio/370/jpg/prime-370-1x.jpg 370w,
-                      ./images/portfolio/370/jpg/prime-370-2x.jpg 740w,
-                      ./images/portfolio/354/jpg/prime-354-1x.jpg 354w,
-                      ./images/portfolio/354/jpg/prime-354-2x.jpg 708w
+                      ./images/portfolio/354/jpg/prime-354-1x.jpg 1x,
+                      ./images/portfolio/354/jpg/prime-354-2x.jpg 2x
                     "
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/webp/prime-370-1x.webp 1x,
+                      ./images/portfolio/370/webp/prime-370-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/jpg/prime-370-1x.jpg 1x,
+                      ./images/portfolio/370/jpg/prime-370-2x.jpg 2x
+                    "
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/webp/prime-450-1x.webp 1x,
+                      ./images/portfolio/450/webp/prime-450-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/jpg/prime-450-1x.jpg 1x,
+                      ./images/portfolio/450/jpg/prime-450-2x.jpg 2x
+                    "
+                  />
+                  <!-- default -->
+                  <img
                     src="./images/portfolio/450/jpg/prime-450-1x.jpg"
                     alt="чорні безпровідні навушники"
                     class="img projects__img"
                     width="450"
+                    height="294"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="projects__hover">
@@ -315,31 +438,62 @@
             <li class="li projects__item">
               <div class="projects__wraper">
                 <picture>
+                  <!-- desktop -->
                   <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/webp/boxes-450-1x.webp 450w,
-                      ./images/portfolio/450/webp/boxes-450-2x.webp 900w,
-                      ./images/portfolio/370/webp/boxes-370-1x.webp 370w,
-                      ./images/portfolio/370/webp/boxes-370-2x.webp 740w,
-                      ./images/portfolio/354/webp/boxes-354-1x.webp 354w,
-                      ./images/portfolio/354/webp/boxes-354-2x.webp 708w
+                      ./images/portfolio/354/webp/boxes-354-1x.webp 1x,
+                      ./images/portfolio/354/webp/boxes-354-2x.webp 2x
                     "
                     type="image/webp"
                   />
-
-                  <img
+                  <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/jpg/boxes-450-1x.jpg 450w,
-                      ./images/portfolio/450/jpg/boxes-450-2x.jpg 900w,
-                      ./images/portfolio/370/jpg/boxes-370-1x.jpg 370w,
-                      ./images/portfolio/370/jpg/boxes-370-2x.jpg 740w,
-                      ./images/portfolio/354/jpg/boxes-354-1x.jpg 354w,
-                      ./images/portfolio/354/jpg/boxes-354-2x.jpg 708w
+                      ./images/portfolio/354/jpg/boxes-354-1x.jpg 1x,
+                      ./images/portfolio/354/jpg/boxes-354-2x.jpg 2x
                     "
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/webp/boxes-370-1x.webp 1x,
+                      ./images/portfolio/370/webp/boxes-370-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/jpg/boxes-370-1x.jpg 1x,
+                      ./images/portfolio/370/jpg/boxes-370-2x.jpg 2x
+                    "
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/webp/boxes-450-1x.webp 1x,
+                      ./images/portfolio/450/webp/boxes-450-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/jpg/boxes-450-1x.jpg 1x,
+                      ./images/portfolio/450/jpg/boxes-450-2x.jpg 2x
+                    "
+                  />
+                  <!-- default -->
+                  <img
                     src="./images/portfolio/450/jpg/boxes-450-1x.jpg"
                     alt="біла та коричнева коробка з логотипом"
                     class="img projects__img"
                     width="450"
+                    height="294"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="projects__hover">
@@ -358,31 +512,62 @@
             <li class="li projects__item">
               <div class="projects__wraper">
                 <picture>
+                  <!-- desktop -->
                   <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/webp/inspiration-450-1x.webp 450w,
-                      ./images/portfolio/450/webp/inspiration-450-2x.webp 900w,
-                      ./images/portfolio/370/webp/inspiration-370-1x.webp 370w,
-                      ./images/portfolio/370/webp/inspiration-370-2x.webp 740w,
-                      ./images/portfolio/354/webp/inspiration-354-1x.webp 354w,
-                      ./images/portfolio/354/webp/inspiration-354-2x.webp 708w
+                      ./images/portfolio/354/webp/inspiration-354-1x.webp 1x,
+                      ./images/portfolio/354/webp/inspiration-354-2x.webp 2x
                     "
                     type="image/webp"
                   />
-
-                  <img
+                  <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/jpg/inspiration-450-1x.jpg 450w,
-                      ./images/portfolio/450/jpg/inspiration-450-2x.jpg 900w,
-                      ./images/portfolio/370/jpg/inspiration-370-1x.jpg 370w,
-                      ./images/portfolio/370/jpg/inspiration-370-2x.jpg 740w,
-                      ./images/portfolio/354/jpg/inspiration-354-1x.jpg 354w,
-                      ./images/portfolio/354/jpg/inspiration-354-2x.jpg 708w
+                      ./images/portfolio/354/jpg/inspiration-354-1x.jpg 1x,
+                      ./images/portfolio/354/jpg/inspiration-354-2x.jpg 2x
                     "
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/webp/inspiration-370-1x.webp 1x,
+                      ./images/portfolio/370/webp/inspiration-370-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/jpg/inspiration-370-1x.jpg 1x,
+                      ./images/portfolio/370/jpg/inspiration-370-2x.jpg 2x
+                    "
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/webp/inspiration-450-1x.webp 1x,
+                      ./images/portfolio/450/webp/inspiration-450-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/jpg/inspiration-450-1x.jpg 1x,
+                      ./images/portfolio/450/jpg/inspiration-450-2x.jpg 2x
+                    "
+                  />
+                  <!-- default -->
+                  <img
                     src="./images/portfolio/450/jpg/inspiration-450-1x.jpg"
                     alt="карта світу на екрані монитору"
                     class="img projects__img"
                     width="450"
+                    height="294"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="projects__hover">
@@ -401,31 +586,62 @@
             <li class="li projects__item">
               <div class="projects__wraper">
                 <picture>
+                  <!-- desktop -->
                   <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/webp/edition-450-1x.webp 450w,
-                      ./images/portfolio/450/webp/edition-450-2x.webp 900w,
-                      ./images/portfolio/370/webp/edition-370-1x.webp 370w,
-                      ./images/portfolio/370/webp/edition-370-2x.webp 740w,
-                      ./images/portfolio/354/webp/edition-354-1x.webp 354w,
-                      ./images/portfolio/354/webp/edition-354-2x.webp 708w
+                      ./images/portfolio/354/webp/edition-354-1x.webp 1x,
+                      ./images/portfolio/354/webp/edition-354-2x.webp 2x
                     "
                     type="image/webp"
                   />
-
-                  <img
+                  <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/jpg/edition-450-1x.jpg 450w,
-                      ./images/portfolio/450/jpg/edition-450-2x.jpg 900w,
-                      ./images/portfolio/370/jpg/edition-370-1x.jpg 370w,
-                      ./images/portfolio/370/jpg/edition-370-2x.jpg 740w,
-                      ./images/portfolio/354/jpg/edition-354-1x.jpg 354w,
-                      ./images/portfolio/354/jpg/edition-354-2x.jpg 708w
+                      ./images/portfolio/354/jpg/edition-354-1x.jpg 1x,
+                      ./images/portfolio/354/jpg/edition-354-2x.jpg 2x
                     "
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/webp/edition-370-1x.webp 1x,
+                      ./images/portfolio/370/webp/edition-370-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/jpg/edition-370-1x.jpg 1x,
+                      ./images/portfolio/370/jpg/edition-370-2x.jpg 2x
+                    "
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/webp/edition-450-1x.webp 1x,
+                      ./images/portfolio/450/webp/edition-450-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/jpg/edition-450-1x.jpg 1x,
+                      ./images/portfolio/450/jpg/edition-450-2x.jpg 2x
+                    "
+                  />
+                  <!-- default -->
+                  <img
                     src="./images/portfolio/450/jpg/edition-450-1x.jpg"
                     alt="розворот журналу"
                     class="img projects__img"
                     width="450"
+                    height="294"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="projects__hover">
@@ -444,31 +660,62 @@
             <li class="li projects__item">
               <div class="projects__wraper">
                 <picture>
+                  <!-- desktop -->
                   <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/webp/lab-450-1x.webp 450w,
-                      ./images/portfolio/450/webp/lab-450-2x.webp 900w,
-                      ./images/portfolio/370/webp/lab-370-1x.webp 370w,
-                      ./images/portfolio/370/webp/lab-370-2x.webp 740w,
-                      ./images/portfolio/354/webp/lab-354-1x.webp 354w,
-                      ./images/portfolio/354/webp/lab-354-2x.webp 708w
+                      ./images/portfolio/354/webp/lab-354-1x.webp 1x,
+                      ./images/portfolio/354/webp/lab-354-2x.webp 2x
                     "
                     type="image/webp"
                   />
-
-                  <img
+                  <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/jpg/lab-450-1x.jpg 450w,
-                      ./images/portfolio/450/jpg/lab-450-2x.jpg 900w,
-                      ./images/portfolio/370/jpg/lab-370-1x.jpg 370w,
-                      ./images/portfolio/370/jpg/lab-370-2x.jpg 740w,
-                      ./images/portfolio/354/jpg/lab-354-1x.jpg 354w,
-                      ./images/portfolio/354/jpg/lab-354-2x.jpg 708w
+                      ./images/portfolio/354/jpg/lab-354-1x.jpg 1x,
+                      ./images/portfolio/354/jpg/lab-354-2x.jpg 2x
                     "
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/webp/lab-370-1x.webp 1x,
+                      ./images/portfolio/370/webp/lab-370-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/jpg/lab-370-1x.jpg 1x,
+                      ./images/portfolio/370/jpg/lab-370-2x.jpg 2x
+                    "
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/webp/lab-450-1x.webp 1x,
+                      ./images/portfolio/450/webp/lab-450-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/jpg/lab-450-1x.jpg 1x,
+                      ./images/portfolio/450/jpg/lab-450-2x.jpg 2x
+                    "
+                  />
+                  <!-- default -->
+                  <img
                     src="./images/portfolio/450/jpg/lab-450-1x.jpg"
                     alt="значок логотипа"
                     class="img projects__img"
                     width="450"
+                    height="294"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="projects__hover">
@@ -487,31 +734,62 @@
             <li class="li projects__item">
               <div class="projects__wraper">
                 <picture>
+                  <!-- desktop -->
                   <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/webp/growing-450-1x.webp 450w,
-                      ./images/portfolio/450/webp/growing-450-2x.webp 900w,
-                      ./images/portfolio/370/webp/growing-370-1x.webp 370w,
-                      ./images/portfolio/370/webp/growing-370-2x.webp 740w,
-                      ./images/portfolio/354/webp/growing-354-1x.webp 354w,
-                      ./images/portfolio/354/webp/growing-354-2x.webp 708w
+                      ./images/portfolio/354/webp/growing-354-1x.webp 1x,
+                      ./images/portfolio/354/webp/growing-354-2x.webp 2x
                     "
                     type="image/webp"
                   />
-
-                  <img
+                  <source
+                    media="(min-width: 1200px)"
                     srcset="
-                      ./images/portfolio/450/jpg/growing-450-1x.jpg 450w,
-                      ./images/portfolio/450/jpg/growing-450-2x.jpg 900w,
-                      ./images/portfolio/370/jpg/growing-370-1x.jpg 370w,
-                      ./images/portfolio/370/jpg/growing-370-2x.jpg 740w,
-                      ./images/portfolio/354/jpg/growing-354-1x.jpg 354w,
-                      ./images/portfolio/354/jpg/growing-354-2x.jpg 708w
+                      ./images/portfolio/354/jpg/growing-354-1x.jpg 1x,
+                      ./images/portfolio/354/jpg/growing-354-2x.jpg 2x
                     "
+                  />
+                  <!-- tablet -->
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/webp/growing-370-1x.webp 1x,
+                      ./images/portfolio/370/webp/growing-370-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(min-width: 768px)"
+                    srcset="
+                      ./images/portfolio/370/jpg/growing-370-1x.jpg 1x,
+                      ./images/portfolio/370/jpg/growing-370-2x.jpg 2x
+                    "
+                  />
+                  <!-- mobile -->
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/webp/growing-450-1x.webp 1x,
+                      ./images/portfolio/450/webp/growing-450-2x.webp 2x
+                    "
+                    type="image/webp"
+                  />
+                  <source
+                    media="(max-width: 767px)"
+                    srcset="
+                      ./images/portfolio/450/jpg/growing-450-1x.jpg 1x,
+                      ./images/portfolio/450/jpg/growing-450-2x.jpg 2x
+                    "
+                  />
+                  <!-- default -->
+                  <img
                     src="./images/portfolio/450/jpg/growing-450-1x.jpg"
                     alt="человек печатает на ноутбуке"
                     class="img projects__img"
                     width="450"
+                    height="294"
+                    loading="lazy"
                   />
                 </picture>
                 <div class="projects__hover">

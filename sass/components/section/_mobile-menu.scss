@@ -23,7 +23,6 @@
         height: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
         overflow: auto;
     }
     &__close {
@@ -43,6 +42,10 @@
         &:focus {
             fill: var(--accent-color);
         }
+    }
+
+    &__nav {
+        margin-bottom: auto;
     }
 
     &__list {
@@ -69,6 +72,7 @@
         display: flex;
         flex-direction: column;
         gap: 32px;
+        margin-bottom: 64px;
     }
 
     &__tel {

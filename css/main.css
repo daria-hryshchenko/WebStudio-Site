@@ -218,15 +218,15 @@ ul {
   padding-bottom: 32px;
   text-decoration: none;
   color: var(--nav-contact-color);
-  line-height: 1.1;
-  letter-spacing: 0.02em;
-  font-weight: 500;
-  font-size: 14px;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 @media screen and (min-width: 768px) {
   .contact__link {
+    font-size: 12px;
+    line-height: 1.1;
+    font-weight: 500;
+    letter-spacing: 0.02em;
     padding: 0;
   }
 }
@@ -234,14 +234,30 @@ ul {
   .contact__link {
     padding-top: 32px;
     padding-bottom: 32px;
+    font-size: 14px;
   }
 }
 .contact__link:hover {
   color: var(--accent-color);
 }
 .contact__icon {
-  margin-right: 10px;
+  margin-right: 8px;
   fill: currentColor;
+}
+@media screen and (min-width: 1200px) {
+  .contact__icon {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contact__envelope {
+    width: 16px;
+    height: 12px;
+  }
+}
+.contact__smartphone {
+  width: 10px;
+  height: 16px;
 }
 
 .current {
@@ -261,27 +277,15 @@ ul {
 .hero {
   padding-top: 118px;
   padding-bottom: 118px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  justify-self: center;
   background-color: var(--hero-background-color);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  width: 100%;
-  max-width: 480px;
-  height: 400px;
+  max-width: 1600px;
   margin-left: auto;
   margin-right: auto;
-  outline: 1px solid #000000;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/hero/hero-img-mobile-1x.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/hero/hero-img-mobile-1x.jpg");
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media screen and (min-width: 1200px) {
   .hero {
@@ -299,8 +303,6 @@ ul {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/hero/hero-img-tablet-1x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/hero/hero-img-tablet-1x.jpg");
-    max-width: 768px;
-    background-size: auto auto;
   }
 }
 @media screen and (min-width: 481px) and (min-device-pixel-ratio: 2), screen and (min-width: 481px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 481px) and (min-resolution: 192dpi), screen and (min-width: 481px) and (min-resolution: 2dppx) {
@@ -313,9 +315,6 @@ ul {
   .hero {
     background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("./../images/hero/hero-img-desktop-1x.jpg");
     background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("./../images/hero/hero-img-desktop-1x.jpg");
-    max-width: 1600px;
-    height: 600px;
-    background-size: auto auto;
   }
 }
 @media screen and (min-width: 769px) and (min-device-pixel-ratio: 2), screen and (min-width: 769px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 769px) and (min-resolution: 192dpi), screen and (min-width: 769px) and (min-resolution: 2dppx) {
@@ -714,13 +713,13 @@ ul {
         flex-wrap: wrap;
     -ms-flex-pack: distribute;
         justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
   }
 }
 @media screen and (min-width: 1200px) {
   .footer__container {
-    -webkit-box-align: baseline;
-        -ms-flex-align: baseline;
-            align-items: baseline;
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: flex-start;
@@ -1412,9 +1411,6 @@ ul {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   overflow: auto;
 }
 .mob__close {
@@ -1432,6 +1428,9 @@ ul {
 }
 .mob__close:hover, .mob__close:focus {
   fill: var(--accent-color);
+}
+.mob__nav {
+  margin-bottom: auto;
 }
 .mob__list {
   display: -webkit-box;
@@ -1465,6 +1464,7 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   gap: 32px;
+  margin-bottom: 64px;
 }
 .mob__tel {
   font-size: 34px;
