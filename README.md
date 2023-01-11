@@ -1,6 +1,6 @@
 ![](https://github.com/daria-hryshchenko/goit-markup-hw-08/blob/main/images/project_img/hero_section.png)
  
- # [WebStudio Website](https://daria-hryshchenko.github.io/goit-markup-hw-08/)
+ # [WebStudio Website](https://daria-hryshchenko.github.io/WebStudio-Site/)
  Website improvements have been made :point_down:
  
  :heavy_check_mark: Use Mobile-First Strategy
