@@ -12,4 +12,4 @@
  <br>
  <br>
  ![](https://github.com/daria-hryshchenko/goit-markup-hw-08/blob/main/images/project_img/screen_all.png)
- 
+
